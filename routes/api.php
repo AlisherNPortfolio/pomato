@@ -10,5 +10,3 @@
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
-require __DIR__.'/admin/api.php';
