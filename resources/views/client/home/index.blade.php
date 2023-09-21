@@ -14,21 +14,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ checked_asset('client/css/bootstrap.min.css') }}">
     <!-- style css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ checked_asset('client/css/style.css') }}">
     <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="{{ checked_asset('client/css/responsive.css') }}">
     <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="{{ checked_asset('client/images/fevicon.png') }}" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="{{ checked_asset('client/css/jquery.mCustomScrollbar.min.css') }}">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <!-- owl stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ checked_asset('client/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ checked_asset('client/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -39,7 +39,7 @@
 <body class="main-layout ">
     <!-- loader  -->
     <div class="loader_bg">
-        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+        <div class="loader"><img src="{{ checked_asset('client/images/loading.gif') }}" alt="#" /></div>
     </div>
     <!-- end loader -->
     <!-- header -->
@@ -53,7 +53,7 @@
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/logo.png" alt="#"></a>
+                                    <a href="index.html"><img src="{{ checked_asset('client/images/logo.png') }}" alt="#"></a>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                                         <li><a href="special.html">Specials</a></li>
                                         <li><a href="contact.html">Contact Us</a></li>
                                         <li class="last">
-                                            <a href="#"><img src="images/search_icon.png" alt="icon" /></a>
+                                            <a href="#"><img src="{{ checked_asset('client/images/search_icon.png') }}" alt="icon" /></a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -79,9 +79,9 @@
                     <div class="col-md-6 offset-md-6">
                         <div class="location_icon_bottum">
                             <ul>
-                                <li><img src="icon/call.png" />(+71)9876543109</li>
-                                <li><img src="icon/email.png" />demo@gmail.com</li>
-                                <li><img src="icon/loc.png" />Location</li>
+                                <li><img src="{{ checked_asset('client/icon/call.png') }}" />(+71)9876543109</li>
+                                <li><img src="{{ checked_asset('client/icon/email.png') }}" />demo@gmail.com</li>
+                                <li><img src="{{ checked_asset('client/icon/loc.png') }}" />Location</li>
                             </ul>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
         <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="first-slide" src="images/banner.jpg" alt="First slide">
+                    <img class="first-slide" src="{{ checked_asset('client/images/banner.jpg') }}" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption relative">
                             <span>All New Phones </span>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="second-slide" src="images/banner.jpg" alt="Second slide">
+                    <img class="second-slide" src="{{ checked_asset('client/images/banner.jpg') }}" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption relative">
                             <span>All New Phones </span>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="third-slide" src="images/banner.jpg" alt="Third slide">
+                    <img class="third-slide" src="{{ checked_asset('client/images/banner.jpg') }}" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption relative">
                             <span>All New Phones </span>
@@ -161,7 +161,7 @@
             <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
                     <div class="about_img">
-                        <figure><img src="images/about.png" alt="img" /></figure>
+                        <figure><img src="{{ checked_asset('client/images/about.png') }}" alt="img" /></figure>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
@@ -194,68 +194,68 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                         <div class="brand_box">
-                            <img src="images/1.png" alt="img" />
+                            <img src="{{ checked_asset('client/images/1.png') }}" alt="img" />
                             <h3>$<strong class="red">100</strong></h3>
                             <span>Mobile Phone</span>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                         <div class="brand_box">
-                            <img src="images/2.png" alt="img" />
+                            <img src="{{ checked_asset('client/images/2.png') }}" alt="img" />
                             <h3>$<strong class="red">100</strong></h3>
                             <span>Mobile Phone</span>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                         <div class="brand_box">
-                            <img src="images/3.png" alt="img" />
+                            <img src="{{ checked_asset('client/images/3.png') }}" alt="img" />
                             <h3>$<strong class="red">100</strong></h3>
                             <span>Mobile Phone</span>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                         <div class="brand_box">
-                            <img src="images/4.png" alt="img" />
+                            <img src="{{ checked_asset('client/images/4.png') }}" alt="img" />
                             <h3>$<strong class="red">100</strong></h3>
                             <span>Mobile Phone</span>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
                         <div class="brand_box">
-                            <img src="images/5.png" alt="img" />
+                            <img src="{{ checked_asset('client/images/5.png') }}" alt="img" />
                             <h3>$<strong class="red">100</strong></h3>
                             <span>Mobile Phone</span>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
                         <div class="brand_box">
-                            <img src="images/6.png" alt="img" />
+                            <img src="{{ checked_asset('client/images/6.png') }}" alt="img" />
                             <h3>$<strong class="red">100</strong></h3>
                             <span>Mobile Phone</span>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
-                            <i><img src="images/star.png"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
+                            <i><img src="{{ checked_asset('client/images/star.png') }}"/></i>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -300,7 +300,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
                                     </p>
                                     <div class="full text_align_center margin_top_30">
-                                        <img src="icon/testimonial_qoute.png">
+                                        <img src="{{ checked_asset('client/icon/testimonial_qoute.png') }}">
                                     </div>
                                 </div>
                             </div>
@@ -318,7 +318,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
                                     </p>
                                     <div class="full text_align_center margin_top_30">
-                                        <img src="icon/testimonial_qoute.png">
+                                        <img src="{{ checked_asset('client/icon/testimonial_qoute.png') }}">
                                     </div>
                                 </div>
                             </div>
@@ -337,7 +337,7 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
                                     </p>
                                     <div class="full text_align_center margin_top_30">
-                                        <img src="icon/testimonial_qoute.png">
+                                        <img src="{{ checked_asset('client/icon/testimonial_qoute.png') }}">
                                     </div>
                                 </div>
                             </div>
@@ -426,17 +426,18 @@
     </footer>
     <!-- end footer -->
     <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
+    <script src="{{ checked_asset('client/js/jquery.min.js') }}"></script>
+    <script src="{{ checked_asset('client/js/popper.min.js') }}"></script>
+    <script src="{{ checked_asset('client/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ checked_asset('client/js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ checked_asset('client/js/jquery.fancybox.min.js') }}"></script>
+    <script src="{{ checked_asset('client/js/plugin.js') }}"></script>
     <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{{ checked_asset('client/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ checked_asset('client/js/custom.js') }}"></script>
     <!-- javascript -->
-    <script src="js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="{{ checked_asset('client/js/owl.carousel.js') }}"></script>
+    
     <script>
         $(document).ready(function() {
             $(".fancybox").fancybox({

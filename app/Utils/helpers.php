@@ -55,3 +55,12 @@ if (!function_exists('error_response')) {
         return response()->json($response);
     }
 }
+
+if (!function_exists('checked_asset')) {
+    function checked_asset(string $src)
+    {
+        $secure = \Illuminate\Support\Facades\App::environment('local') ? false : true;
+
+        return asset($src, $secure);
+    }
+}
