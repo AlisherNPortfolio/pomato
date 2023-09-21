@@ -1,12 +1,12 @@
 <template>
-    <router-view/>
+    <router-view />
     <notifications position="bottom right" />
-  </template>
+</template>
 
-  <script lang="ts">
-  import { defineComponent } from "@vue/runtime-core";
+<script lang="ts">
+import { defineComponent } from "@vue/runtime-core";
 
-  export default defineComponent({
+export default defineComponent({
     name: "App"
-  });
-  </script>
+});
+</script>
