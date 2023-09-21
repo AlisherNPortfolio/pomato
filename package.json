@@ -8,18 +8,12 @@
         "preview": "vite preview"
     },
     "devDependencies": {
-        "@vue/tsconfig": "^0.4.0",
         "axios": "^1.1.2",
         "laravel-vite-plugin": "^0.8.0",
-        "typescript": "^5.2.2",
         "vite": "^4.0.0"
     },
     "dependencies": {
-        "@kyvg/vue3-notification": "^3.0.2",
-        "@vitejs/plugin-vue": "^4.3.4",
         "vue": "^3.2.36",
-        "vue-loader": "^17.2.2",
-        "vue-router": "^4.2.4",
-        "vuex": "^4.1.0"
+        "vue-loader": "^17.2.2"
     }
 }
