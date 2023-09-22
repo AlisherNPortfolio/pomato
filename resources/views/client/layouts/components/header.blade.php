@@ -18,13 +18,20 @@
                         <div class="limit-box">
                             <nav class="main-menu">
                                 <ul class="menu-area-main">
-                                    <li class="active"> <a href="index.html">Home</a> </li>
-                                    <li> <a href="about.html">About</a> </li>
-                                    <li><a href="brand.html">Brand</a></li>
-                                    <li><a href="special.html">Specials</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    <li class="last">
-                                        <a href="#"><img src="{{ checked_asset('client/images/search_icon.png') }}" alt="icon" /></a>
+                                    <li class="active">
+                                        <a href="index.html">Главная</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="brand.html">Бренд</a>
+                                    </li>
+                                    <li>
+                                        <a href="special.html">Предложения</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -33,10 +40,19 @@
                 </div>
                 <div class="col-md-6 offset-md-6">
                     <div class="location_icon_bottum">
-                        <ul>
-                            <li><img src="{{ checked_asset('client/icon/call.png') }}" />(+71)9876543109</li>
-                            <li><img src="{{ checked_asset('client/icon/email.png') }}" />demo@gmail.com</li>
-                            <li><img src="{{ checked_asset('client/icon/loc.png') }}" />Location</li>
+                        <ul class="contacts_sub_menu">
+                            <li>
+                                <img src="{{ checked_asset('client/icon/call.png') }}" />
+                                <a href="tel:+998999999999" style="color: #fff">+998(99) 999-99-99</a>
+                            </li>
+                            <li>
+                                <img src="{{ checked_asset('client/icon/email.png') }}" />
+                                <a href="mailto:demo@gmail.com" style="color: #fff">demo@gmail.com</a>
+                            </li>
+                            <li>
+                                <img src="{{ checked_asset('client/icon/loc.png') }}" />
+                                <a href="https://maps.app.goo.gl/j7ZE3cYsfVU4mT9v5" target="_blank" style="color: #fff">Локация</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
