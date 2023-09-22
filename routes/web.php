@@ -13,4 +13,6 @@ use App\Http\Controllers\Client\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+require __DIR__ . '/admin/web.php';
