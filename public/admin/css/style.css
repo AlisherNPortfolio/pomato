@@ -1,0 +1,118 @@
+.alert.main-alert {
+    width: 300px;
+    position: fixed;
+    right: 8px;
+    bottom: 5px;
+}
+
+.alert-container {
+    position: fixed;
+    right: 8px;
+    bottom: 5px;
+}
+
+.captcha-container {
+    display: flex;
+    justify-content: space-between;
+}
+.captcha-item {
+    align-self: center;
+}
+.captcha img {
+    margin: 0 auto;
+    display: block;
+}
+
+.captcha-input {
+    flex: 0 0 40%;
+}
+
+.captcha {
+    flex: 0 0 40%;
+}
+
+.captcha-btn {
+    flex: 0 0 10%;
+}
+
+.form-control:focus {
+    color: #acb8c3;
+}
+
+@media (min-width: 440px) {
+    .captcha-input {
+        flex: 0 0 50%;
+    }
+
+    .captcha {
+        flex: 0 0 36%;
+    }
+}
+
+@media (min-width: 550px) {
+    .captcha-input {
+        flex: 0 0 66%;
+    }
+
+    .captcha {
+        flex: 0 0 25%;
+    }
+}
+
+@media (min-width: 642px) {
+    .captcha-input {
+        flex: 0 0 70%;
+    }
+
+    .captcha {
+        flex: 0 0 18%;
+    }
+}
+
+@media (min-width: 742px) {
+    .captcha-input {
+        flex: 0 0 74%;
+    }
+
+    .captcha {
+        flex: 0 0 14%;
+    }
+}
+
+@media (min-width: 842px) {
+    .captcha-input {
+        flex: 0 0 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .captcha-input {
+        flex: 0 0 35%;
+    }
+
+    .captcha {
+        flex: 0 0 35%;
+    }
+}
+
+@media (min-width: 1122px) {
+    .captcha-input {
+        flex: 0 0 45%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .captcha-input {
+        flex: 0 0 56%;
+    }
+
+    .captcha {
+        flex: 0 0 25%;
+    }
+}
+
+@media (min-width: 1442px) {
+    .captcha-input {
+        flex: 0 0 62%;
+    }
+}

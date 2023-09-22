@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>@yield('title') Register</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ checked_asset('admin/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -19,58 +19,36 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ checked_asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <link href="{{ checked_asset('admin/css/style.css') }}" rel="stylesheet">
 
 </head>
 
-<body id="page-top">
+<body class="bg-gradient-primary">
 
-    <!-- Page Wrapper -->
-    <div id="wrapper">
+    <div class="container">
 
-        <!-- Sidebar -->
-        @include('admin.layouts.components.menu')
-        <!-- End of Sidebar -->
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
                 @yield('content')
-
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            @include('admin.layouts.components.footer')
-            <!-- End of Footer -->
-
         </div>
-        <!-- End of Content Wrapper -->
 
     </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    @include('admin.layouts.components.logout-modal')
 
     @if(Session::has('error'))
-        <div class="container-fluid">
-            <div class="alert alert-danger main-alert">{{Session::get('error')}}</div>
-        </div>
+    <div class="container-fluid">
+        <div class="alert alert-danger main-alert">{{Session::get('error')}}</div>
+    </div>
     @endif
-
-    @if(Session::has('success'))
-        <div class="container-fluid">
-            <div class="alert alert-success main-alert">{{Session::get('success')}}</div>
-        </div>
+{{-- @dd($errors->all()); --}}
+    @if ($errors->any())
+    <div class="alert-container">
+        @foreach ($errors->all() as $error)
+        <div class="alert alert-danger main-alert" style="position: initial !important;">{{ $error }}</div>
+        @endforeach
+    </div>
     @endif
-
     <!-- Bootstrap core JavaScript-->
     <script src="{{ checked_asset('admin/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ checked_asset('admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -80,7 +58,26 @@
 
     <!-- Custom scripts for all pages-->
     <script src="{{ checked_asset('admin/js/sb-admin-2.min.js') }}"></script>
-
+    <script>
+        $(document).ready(function () {
+            setTimeout(() => {
+                $('.alert').remove();
+            }, 6000);
+        });
+        function relaodCaptcha() {console.log('rr');
+            $('#captcha').val('')
+            $.ajax({
+                type: 'GET',
+                url: '/panel/reload-captcha',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(data) {
+                    $("#captcha_img").html(data.captcha);
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

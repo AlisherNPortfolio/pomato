@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Log;
+
 if (!function_exists('is_prod')) {
     /**
      * Checks if application in production mode.
@@ -69,5 +71,14 @@ if (!function_exists('cleanNullArray')) {
     function cleanNullArray(array $originArray)
     {
         return array_filter($originArray, fn ($val) => !is_null($val));
+    }
+}
+
+if (!function_exists('env_dependend_error')) {
+    function env_dependend_error(string $message)
+    {
+        Log::error('Environment dependent error: '.$message);
+
+        return \Illuminate\Support\Facades\App::environment('local') ? $message : 'Serverda xatolik yuz berdi!';
     }
 }
